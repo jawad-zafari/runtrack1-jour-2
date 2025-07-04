@@ -1,0 +1,168 @@
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --border-radius: 5px;
+}
+input, textarea, select
+text-align: left;
+direction: ltr;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f5f5f5;
+    padding: 20px;
+    direction: rtl;
+}text-align: left;
+
+.resume {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* هدر رزومه */
+.resume-header {
+    display: flex;
+    padding: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-left: 50px;
+}
+
+.header-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.header-info h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.header-info .summary {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
+.resume-body {
+    display: flex;
+}
+
+
+.sidebar {
+    width: 30%;
+    padding: 30px;
+    background-color: var(--light-color);
+}
+
+.sidebar h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+
+.skill-bar {
+    height: 8px;
+    background-color: #ddd;
+    border-radius: var(--border-radius);
+    margin-top: 5px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+
+.main-content {
+    width: 70%;
+    padding: 30px;
+}
+
+.main-content h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.job, .degree {
+    margin-bottom: 25px;
+}
+
+.job h4, .degree h4 {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+}
+
+.job-meta, .education-meta {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0 15px;
+    color: #666;
+}
+
+.job-description {
+    margin-right: 20px;
+}
+
+.job-description li {
+    margin-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .resume-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin: 0 0 20px 0;
+    }
+    
+    .resume-body {
+        flex-direction: column;
+    }
+    
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}

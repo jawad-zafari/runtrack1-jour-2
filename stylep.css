@@ -1,0 +1,28 @@
+div{
+    text-align: center;
+    border-radius:  25px ;
+    background-color: rgb(249, 251, 251);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+h1{
+    text-align: center;
+    padding: 2px;
+}
+body{
+    background-color: rgba(25, 183, 241, 0.491);
+}
+a{
+    border-radius: 5px;
+    background-color: rgba(81, 207, 253, 0.298);
+    font-size: 1.6rem;
+    margin: 25px;
+    padding: 5px;
+    color: rgb(2, 12, 22);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+hr{
+    font-size: 1.2rem;
+}
